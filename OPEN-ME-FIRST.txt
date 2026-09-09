@@ -1,0 +1,42 @@
+EUKRION WEBSITE — how to use these files
+========================================
+
+WHAT THIS IS
+Everything needed for the Eukrion website. All files must stay together
+in ONE folder, side by side. Do not move any file into a subfolder.
+
+TO PREVIEW IT ON YOUR OWN COMPUTER
+1. Extract this zip fully first (Windows: right-click > Extract All.
+   Mac: double-click the zip). Do NOT open index.html from inside the
+   zip preview window — the images will not appear if you do.
+2. Open the extracted folder.
+3. Double-click index.html. It opens in your browser.
+
+Note: an internet connection is needed even for the local preview,
+because the two fonts (Inter and Jost) load from Google Fonts.
+
+TO PUBLISH IT ON GITHUB PAGES
+Upload the CONTENTS of this folder — all the files, not the folder
+itself — to the root of your repository. index.html must sit at the
+top level of the repo, not inside a subfolder.
+
+Then: Settings > Pages > Deploy from a branch > main > / (root).
+
+ONE HIDDEN FILE
+There is a file called ".nojekyll" (starts with a dot). It is hidden
+by default on Mac and Windows and it must be uploaded with the rest.
+  Mac:     press Cmd + Shift + .  in Finder to show hidden files
+  Windows: View > Show > Hidden items
+
+BEFORE GOING LIVE
+1. In index.html, replace YOUR_FORM_ID with a real Formspree endpoint,
+   or the contact form will not work.
+2. Make sure hello@eukrion.com exists and reaches you.
+3. DNS at your registrar, for the apex record @:
+      185.199.108.153
+      185.199.109.153
+      185.199.110.153
+      185.199.111.153
+   and a CNAME for www pointing to your github.io address.
+
+See README.md for the full detail.
